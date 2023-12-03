@@ -1,0 +1,127 @@
+/* Apply a background image to a separate element for the blur effect */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Images/anime-background.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+/* Apply a background color to the body */
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #ddd;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center align items horizontally */
+    margin-top: 20px;
+    /* Adjust margin as needed */
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    /* Add some space between the image and text */
+}
+
+.name {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.about {
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 20px;
+    /* Add space between the about section and the table */
+    line-height: 1.5;
+    /* Increase line height for better readability */
+}
+
+/* Style for the table */
+.table {
+    margin-top: 20px;
+    /* Add space between the profile and table */
+}
+
+.rounded-table {
+    width: 40%;
+    margin: 0 auto;
+    /* Center the table */
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Adding a subtle shadow for depth */
+}
+
+th {
+    color: #333333;
+}
+
+.rounded-table th,
+.rounded-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    /* Add borders for cells */
+}
+
+.rounded-table th {
+    background-color: #f2f2f2;
+    /* Header background color */
+    font-weight: bold;
+}
+
+/* Style for the links section */
+.links {
+    margin-top: 20px;
+    /* Add space between the table and links */
+    text-align: center;
+    /* Center align the links */
+}
+
+/* Style for the social links */
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-links li {
+    margin: 0 10px;
+    /* Add spacing between links */
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #ddd;
+    /* Link text color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-links img {
+    width: 30px;
+    /* Adjust the icon size */
+    height: 30px;
+    margin-bottom: 5px;
+    /* Add space between icon and text */
+}
